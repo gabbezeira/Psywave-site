@@ -1,6 +1,6 @@
 <img src="image-readme.png" alt="exemplo imagem">
 
-# Psywave Store
+# Psywave Store (Em desenvolvimento)
 
   Site para o cliente PsyWave (loja de conta de jogos), integrado com uma API própria em node e banco de dados Firebase. A aplicação conta com painel administrativo, sistemas de autenticação e sistemas de alertas (Snackbar).
 
