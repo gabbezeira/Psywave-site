@@ -1,0 +1,73 @@
+[
+	{
+		"title": "Contas de GTA Online 🎮",
+		"background": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/gta-bg.jpg",
+		"items": [
+			{
+				"description": "120 Levels + 8,000 Gold + 700,000 Dólares",
+				"price": "79,90",
+				"image": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/gta-money.png",
+				"platform": ["PS4", "PS5", "XONE", "SERIES S|X"]
+			},
+			{
+				"description": "120 Levels + 8,000 Gold + 700,000 Dólares",
+				"price": "79,90",
+				"image": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/cod-acc.webp",
+				"platform": ["PS4", "PS5", "XONE", "SERIES S|X"]
+			},
+			{
+				"description": "120 Levels + 8,000 Gold + 700,000 Dólares",
+				"price": "79,90",
+				"image": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/gta-money.png",
+				"platform": ["PS4", "PS5", "XONE", "SERIES S|X"]
+			},
+			{
+				"description": "120 Levels + 8,000 Gold + 700,000 Dólares",
+				"price": "79,90",
+				"image": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/cod-acc.webp",
+				"platform": ["PS4", "PS5", "XONE", "SERIES S|X"]
+			},
+			{
+				"description": "120 Levels + 8,000 Gold + 700,000 Dólares",
+				"price": "79,90",
+				"image": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/cod-acc.webp",
+				"platform": ["PS4", "PS5", "XONE", "SERIES S|X"]
+			},
+			{
+				"description": "120 Levels + 8,000 Gold + 700,000 Dólares",
+				"price": "79,90",
+				"image": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/cod-acc.webp",
+				"platform": ["PS4", "PS5", "XONE", "SERIES S|X"]
+			},
+			{
+				"description": "120 Levels + 8,000 Gold + 700,000 Dólares",
+				"price": "79,90",
+				"image": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/cod-acc.webp",
+				"platform": ["PS4", "PS5", "XONE", "SERIES S|X"]
+			},
+			{
+				"description": "120 Levels + 8,000 Gold + 700,000 Dólares",
+				"price": "79,90",
+				"image": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/cod-acc.webp",
+				"platform": ["PS4", "PS5", "XONE", "SERIES S|X"]
+			}
+		]
+	},
+	{
+		"title": "Contas de COD Warzone 🪖",
+		"background": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/codb.jpg",
+		"items": [
+			{
+				"description": "120 Levels + Extras",
+				"price": "79,90",
+				"image": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/cod-acc.webp",
+				"platform": ["PS4", "PS5", "XONE", "SERIES S|X"]
+			}
+		]
+	},
+	{
+		"title": "Contas de EA FC ⚽",
+		"background": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/eafc-bg.jpg",
+		"items": []
+	}
+]
