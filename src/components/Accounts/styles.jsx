@@ -54,7 +54,7 @@ export const Cards = styled.div`
     }
 
     @media (max-width: 768px) {
-      min-width: 1.75rem;
+      min-width: 1.25rem;
 
     }
   }
@@ -66,7 +66,7 @@ export const Cards = styled.div`
 
 export const CardsContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   gap: 2rem;
 

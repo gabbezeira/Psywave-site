@@ -12,7 +12,8 @@ export const Container = styled.div`
   background-color: ${({ $cardBackground }) => $cardBackground || 'rgba(255, 255, 255, 0.10)'};
   backdrop-filter: blur(0.8rem);
 
-  width: auto;
+
+  width: 15rem;
   min-height: 18.5rem;
 
   padding: 1.5rem;
@@ -76,14 +77,6 @@ export const Container = styled.div`
     }
   }
 
-
-  @media (max-width: 768px) {
-    width: calc(50% - 1rem);
-  }
-
-  @media (max-width: 480px) {
-    width: 100%;
-  }
 `
 export const CardImage = styled.div`
   width: 100%;

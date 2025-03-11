@@ -11,7 +11,7 @@ export const StyledMoreCard = styled.div`
   background-color: rgba(255, 255, 255, 0.10);
   backdrop-filter: blur(0.5rem);
 
-  width: 15.5625rem;
+  width: 15rem;
   height: 18.5rem;
 
   padding: 1.5rem;
@@ -33,13 +33,5 @@ export const StyledMoreCard = styled.div`
     color: var(--white-color);
     height: 3rem;
     width: 3rem;
-  }
-  
-  @media (max-width: 768px) {
-    width: calc(50% - 1rem);
-  }
-
-  @media (max-width: 480px) {
-    width: 100%;
   }
 `
