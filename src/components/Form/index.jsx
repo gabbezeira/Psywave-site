@@ -105,7 +105,6 @@ export const Form = () => {
 				</form>
 			</StyledForm>
 
-			{/* Modal de status */}
 			{isModalOpen && statusMessage === 'success' && (
 				<Modal onClose={handleCloseModal}>
 					<img

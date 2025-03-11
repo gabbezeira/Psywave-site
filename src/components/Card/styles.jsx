@@ -21,9 +21,14 @@ export const Container = styled.div`
 
   .image {
     width: 100%;
-    height: auto;
+    height: 8.25rem;
+    max-height: 8.25rem;
     user-select: none;
     pointer-events: none;
+
+    background-image: ${({ $cardImage }) => `url(${$cardImage})`};
+    background-size: cover;
+    background-position: start;
 
   }
 
@@ -31,7 +36,6 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    align-items: center;
     gap: 0.5rem;
 
     height: 100%;
@@ -93,4 +97,15 @@ export const Container = styled.div`
   @media (max-width: 480px) {
     width: 100%;
   }
+`
+export const CardImage = styled.div`
+  width: 100%;
+  height: 8.25rem;
+  max-height: 8.25rem;
+  user-select: none;
+  pointer-events: none;
+
+  background-image: ${({ $cardImage }) => `url(${$cardImage})`};
+  background-size: cover;
+  background-position: start;
 `

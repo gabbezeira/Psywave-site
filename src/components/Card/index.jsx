@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { Container } from './styles'
+import { CardImage, Container } from './styles'
 
 export function Card({
 	numericId,
@@ -18,7 +18,7 @@ export function Card({
 
 	return (
 		<Container $cardBackground={cardBg}>
-			<img className="image" src={image} alt="Product" />
+			<CardImage $cardImage={image} alt="Product" />
 			<div className="footer">
 				<h1
 					className="title"
