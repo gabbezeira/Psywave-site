@@ -15,7 +15,7 @@ export function HeroSection() {
 				</div>
 				<Link
 					className="button"
-					to="https://wa.me/55179925469?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20contas!"
+					to="https://wa.me/5517992546927?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20contas!"
 					target="_blank"
 				>
 					Como funciona?
