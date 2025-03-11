@@ -85,7 +85,19 @@ export const StyledForm = styled.button`
       background-color: #FFFFFF;
       border: 0.0313rem solid #e4e4e4;
       border-radius: 0.5rem;
+      font-size: 1rem;
+      font-family: "Poppins", sans-serif;
+      color: var(--black-color);
       resize: none;
+      padding: 0.625rem;
+
+      outline: none;
+
+      &::-webkit-input-placeholder{
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        color: #E1E1E6;
+      }
     }
 
     .whatsapp {
@@ -104,7 +116,7 @@ export const StyledForm = styled.button`
 
     .form {
       width: 100%;
-      
+
       .topInputs {
         flex-direction: column;
       }

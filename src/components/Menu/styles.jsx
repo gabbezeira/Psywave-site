@@ -14,9 +14,8 @@ export const StyledMenu = styled.div`
   position: relative;
 
   .logo {
-    height: 4rem;
-    width: 4rem;
-    background-color: var(--secondary-color);
+    max-height: 5rem;
+    width: auto;
     justify-self: start;
   }
 

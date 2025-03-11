@@ -1,3 +1,4 @@
+import Logo from '@assets/logo.webp'
 import { X as CloseIcon, Menu as MenuIcon } from 'lucide-react'
 import { useState } from 'react'
 import { HashLink as Link } from 'react-router-hash-link'
@@ -19,7 +20,7 @@ export const Menu = () => {
 
 	return (
 		<StyledMenu>
-			<div className="logo" />
+			<img src={Logo} className="logo" alt="logo" />
 			<HamburgerButton onClick={toggleMenu}>
 				{isOpen ? <CloseIcon size={32} /> : <MenuIcon size={32} />}
 			</HamburgerButton>
