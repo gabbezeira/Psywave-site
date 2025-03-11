@@ -19,14 +19,23 @@ export const Modal = ({ onClose, children }) => {
 		}
 	}, [onClose])
 
+	const handleAnimationEnd = () => {
+		if (!isVisible) {
+			onClose()
+		}
+	}
+
 	const handleCloseButtonClick = () => {
 		setIsVisible(false)
-		setTimeout(onClose, 300)
 	}
 
 	return (
 		<ModalStyled className={isVisible ? 'show' : ''}>
-			<div className="modalContent" ref={modalRef}>
+			<div
+				className={`modalContent ${isVisible ? 'show' : ''}`}
+				ref={modalRef}
+				onAnimationEnd={handleAnimationEnd}
+			>
 				{children}
 				<button
 					type="button"

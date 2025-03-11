@@ -10,8 +10,6 @@ export const ModalStyled = styled.div`
   background-color: rgba(0, 0, 0, 0.30);
   display: flex;
   justify-content: center;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
   opacity: 0;
   pointer-events: none;
@@ -28,9 +26,10 @@ export const ModalStyled = styled.div`
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 2rem;
-    background-color: var(--white);
-    padding: 2rem 2rem;
+    background-color: var(--white-color);
+    padding: 2rem;
     border-radius: 0.5rem;
     width: auto;
     height: auto;
@@ -47,30 +46,27 @@ export const ModalStyled = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-
       text-align: center;
       border: none;
       border-radius: 0.25rem;
-
       width: auto;
       height: auto;
       padding: 1rem 1.25rem;
-
-      background-color: var(--primary);
-      color: var(--white);
+      background-color: var(--primary-color);
+      color: var(--white-color);
       font-size: 1rem;
-
       cursor: pointer;
-      transition: all .2s;
+      transition: all 0.2s;
 
       &:hover {
-        background-color: var(--primary-opacity)
+        background-color: var(--primary-hover)
       }
     }
 
     .text {
+      width: 70%;
       font-size: 1rem;
-      color: var(--black);
+      color: var(--black-color);
       font-weight: bold;
     }
 
@@ -80,9 +76,14 @@ export const ModalStyled = styled.div`
     }
   }
 
-  @media(max-width: 768px){
-   .modalContent {
+  @media(max-width: 768px) {
+    .modalContent {
       width: 20.625rem;
-   }
+      padding: 1.5rem;
+
+      .text {
+        width: 100%;
+      }
+    }
   }
 `

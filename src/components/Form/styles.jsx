@@ -86,7 +86,7 @@ export const StyledForm = styled.button`
       border: 0.0313rem solid #e4e4e4;
       border-radius: 0.5rem;
       font-size: 1rem;
-      font-family: "Poppins", sans-serif;
+      font-family: sans-serif;
       color: var(--black-color);
       resize: none;
       padding: 0.625rem;
@@ -94,9 +94,35 @@ export const StyledForm = styled.button`
       outline: none;
 
       &::-webkit-input-placeholder{
-        font-family: "Poppins", sans-serif;
+        font-family: sans-serif;
         font-size: 1rem;
         color: #E1E1E6;
+      }
+    }
+    
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+      padding: 0.875rem 2rem;
+      border-radius: 0.5rem;
+      background-color: var(--primary-color);
+
+      color: var(--white-color);
+      text-align: center;
+      font-size: 1rem;
+
+      width: 100%;
+      height: 3.5rem;
+
+      border: none;
+      transition: all 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--primary-hover);
       }
     }
 

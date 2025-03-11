@@ -1,27 +1,36 @@
-import { Button, Loader, Modal } from '@components'
+import SendSuccess from '@assets/email.svg'
+import SendError from '@assets/warning.svg'
+import { Loader, Modal } from '@components'
 import emailjs from '@emailjs/browser'
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import { StyledForm } from './styles'
 
 export const Form = () => {
-	const formRef = useRef(null)
+	const [formData, setFormData] = useState({
+		nome: '',
+		email: '',
+		mensagem: '',
+	})
 	const [isLoading, setIsLoading] = useState(false)
 	const [statusMessage, setStatusMessage] = useState('')
 	const [isModalOpen, setIsModalOpen] = useState(false)
 
 	const handleCloseModal = () => setIsModalOpen(false)
 
+	const handleInputChange = (e) => {
+		const { name, value } = e.target
+		setFormData((prevData) => ({
+			...prevData,
+			[name]: value,
+		}))
+	}
+
 	const handleSubmit = async (e) => {
 		e.preventDefault()
 
-		const form = formRef.current
-		const nome = form.nome.value.trim()
-		const email = form.email.value.trim()
-		const mensagem = form.mensagem.value.trim()
+		const { nome, email, mensagem } = formData
 
-		console.log('Nome:', nome, 'Email:', email, 'Mensagem:', mensagem)
-
-		if (!nome || !email || !mensagem) {
+		if (!nome.trim() || !email.trim() || !mensagem.trim()) {
 			setStatusMessage('alldata')
 			setIsModalOpen(true)
 			return
@@ -30,15 +39,19 @@ export const Form = () => {
 		setIsLoading(true)
 
 		try {
-			await emailjs.sendForm(
-				'service_uc55k8w', // Substitua pelo seu ID de serviço
-				'template_dcisjsh', // Substitua pelo seu ID de template
-				form,
-				'fq4DGFk5MAwDYCyxi', // Substitua pela sua Public Key
+			await emailjs.send(
+				'service_uc55k8w',
+				'template_dcisjsh',
+				{
+					nome,
+					email,
+					mensagem,
+				},
+				'fq4DGFk5MAwDYCyxi',
 			)
 
 			setStatusMessage('success')
-			form.reset() // Limpa o formulário após o envio
+			setFormData({ nome: '', email: '', mensagem: '' })
 		} catch (error) {
 			console.error('Erro ao enviar:', error)
 			setStatusMessage('error')
@@ -52,7 +65,7 @@ export const Form = () => {
 		<>
 			<StyledForm id="contato">
 				<h1 className="formTitle">Fale Conosco</h1>
-				<form ref={formRef} className="form" onSubmit={handleSubmit}>
+				<form onSubmit={handleSubmit} className="form">
 					<div className="topInputs">
 						<div className="inputWrapper">
 							<p className="label">Nome</p>
@@ -60,6 +73,8 @@ export const Form = () => {
 								className="input"
 								placeholder="Digite seu nome"
 								name="nome"
+								value={formData.nome}
+								onChange={handleInputChange}
 								required
 							/>
 						</div>
@@ -70,6 +85,8 @@ export const Form = () => {
 								placeholder="Digite seu e-mail"
 								name="email"
 								type="email"
+								value={formData.email}
+								onChange={handleInputChange}
 								required
 							/>
 						</div>
@@ -78,28 +95,52 @@ export const Form = () => {
 						className="text-area"
 						placeholder="Digite sua mensagem"
 						name="mensagem"
+						value={formData.mensagem}
+						onChange={handleInputChange}
 						required
 					/>
-					<Button type="submit" width="100%" disabled={isLoading}>
+					<button type="submit" disabled={isLoading} className="button">
 						{isLoading ? <Loader size={24} /> : 'Enviar'}
-					</Button>
+					</button>
 				</form>
 			</StyledForm>
 
-			{isModalOpen && (
+			{/* Modal de status */}
+			{isModalOpen && statusMessage === 'success' && (
 				<Modal onClose={handleCloseModal}>
-					{statusMessage === 'success' && (
-						<p>Sua mensagem foi enviada com sucesso! Entraremos em contato.</p>
-					)}
-					{statusMessage === 'error' && (
-						<p>
-							Ocorreu um erro ao enviar sua mensagem. Tente novamente mais
-							tarde.
-						</p>
-					)}
-					{statusMessage === 'alldata' && (
-						<p>Por favor, preencha todos os campos.</p>
-					)}
+					<img
+						src={SendSuccess}
+						className="image"
+						alt="imagem de sucesso ao enviar email"
+					/>
+					<p className="text">
+						Sua solicitação foi enviada com sucesso. Entraremos em contato!
+					</p>
+				</Modal>
+			)}
+
+			{isModalOpen && statusMessage === 'error' && (
+				<Modal onClose={handleCloseModal}>
+					<img
+						src={SendError}
+						className="image"
+						alt="imagem de erro ao enviar email"
+					/>
+					<p>
+						Ocorreu um erro ao tentar enviar sua mensagem. Por favor, tente
+						novamente.
+					</p>
+				</Modal>
+			)}
+
+			{isModalOpen && statusMessage === 'alldata' && (
+				<Modal onClose={handleCloseModal}>
+					<img
+						src={SendError}
+						className="image"
+						alt="imagem de erro ao enviar email"
+					/>
+					<p>Preencha todos os campos do formulário corretamente!</p>
 				</Modal>
 			)}
 		</>
