@@ -14,14 +14,3 @@ export const MainContent = styled.div`
   flex-direction: column;
   width: 100%;
 `
-
-export const DetailsContent = styled.div`
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-
-  padding: 5rem;
-`

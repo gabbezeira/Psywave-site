@@ -3,30 +3,30 @@
 		"id": 1,
 		"gameName": "GTA Online",
 		"slug": "gta-online",
-		"image": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/GTA.jpg"
+		"image": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/GTA.webp"
 	},
 	{
 		"id": 2,
 		"gameName": "COD Warzone",
 		"slug": "warzone",
-		"image": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/COD.jpg"
+		"image": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/COD.webp"
 	},
 	{
 		"id": 3,
 		"gameName": "EA FC",
 		"slug": "ea-fc",
-		"image": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/EAFC.jpg"
+		"image": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/EAFC.webp"
 	},
 	{
 		"id": 4,
 		"gameName": "Forza Horizon 5",
 		"slug": "forza",
-		"image": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/FORZA.jpg"
+		"image": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/FORZA.webp"
 	},
 	{
 		"id": 5,
 		"gameName": "Red Dead Online",
 		"slug": "rdr",
-		"image": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/RDR.jpg"
+		"image": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/RDR.webp"
 	}
 ]
