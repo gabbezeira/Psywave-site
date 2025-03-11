@@ -13,9 +13,7 @@ export function HeroSection() {
 						Contas de GTA, Forza Horizon, EA FC e muito mais!
 					</div>
 				</div>
-				<Button borderRadius="3.125rem" padding="1rem 2rem">
-					Como funciona?
-				</Button>
+				<Link className="button">Como funciona?</Link>
 			</div>
 
 			<div className="heroGamesArea">

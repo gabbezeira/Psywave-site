@@ -20,6 +20,33 @@ export const StyledHeroSection = styled.div`
     align-items: center;
     gap: 2rem;
 
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 1rem 2rem;
+      border-radius: 3.25rem;
+      background-color: var(--primary-color);
+
+      color: var(--white-color);
+      text-align: center;
+      font-size: 1rem;
+
+      width: auto;
+      height: auto;
+
+      border: none;
+      transition: all 0.2s;
+      cursor: pointer;
+
+      text-decoration: none;
+
+      &:hover {
+        background-color: var(--primary-hover);
+      }
+    }
+
     .heroTexts {
       display: flex;
       flex-direction: column;
