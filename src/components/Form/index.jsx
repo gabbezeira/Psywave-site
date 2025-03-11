@@ -99,47 +99,53 @@ export const Form = () => {
 						onChange={handleInputChange}
 						required
 					/>
-					<button type="submit" disabled={isLoading} className="button">
-						{isLoading ? <Loader size={24} /> : 'Enviar'}
-					</button>
+					<div className="buttonWrapper">
+						<button type="submit" disabled={isLoading} className="button">
+							{isLoading ? <Loader size={24} /> : 'Enviar'}
+						</button>
+					</div>
 				</form>
 			</StyledForm>
 
-			{isModalOpen && statusMessage === 'success' && (
+			{isModalOpen && (
 				<Modal onClose={handleCloseModal}>
-					<img
-						src={SendSuccess}
-						className="image"
-						alt="imagem de sucesso ao enviar email"
-					/>
-					<p className="text">
-						Sua solicitação foi enviada com sucesso. Entraremos em contato!
-					</p>
-				</Modal>
-			)}
+					{statusMessage === 'success' && (
+						<>
+							<img
+								src={SendSuccess}
+								className="image"
+								alt="imagem de sucesso ao enviar email"
+							/>
+							<p className="text">
+								Sua solicitação foi enviada com sucesso. Entraremos em contato!
+							</p>
+						</>
+					)}
 
-			{isModalOpen && statusMessage === 'error' && (
-				<Modal onClose={handleCloseModal}>
-					<img
-						src={SendError}
-						className="image"
-						alt="imagem de erro ao enviar email"
-					/>
-					<p>
-						Ocorreu um erro ao tentar enviar sua mensagem. Por favor, tente
-						novamente.
-					</p>
-				</Modal>
-			)}
+					{statusMessage === 'error' && (
+						<>
+							<img
+								src={SendError}
+								className="image"
+								alt="imagem de erro ao enviar email"
+							/>
+							<p>
+								Ocorreu um erro ao tentar enviar sua mensagem. Por favor, tente
+								novamente.
+							</p>
+						</>
+					)}
 
-			{isModalOpen && statusMessage === 'alldata' && (
-				<Modal onClose={handleCloseModal}>
-					<img
-						src={SendError}
-						className="image"
-						alt="imagem de erro ao enviar email"
-					/>
-					<p>Preencha todos os campos do formulário corretamente!</p>
+					{statusMessage === 'alldata' && (
+						<>
+							<img
+								src={SendError}
+								className="image"
+								alt="imagem de erro ao enviar email"
+							/>
+							<p>Preencha todos os campos do formulário corretamente!</p>
+						</>
+					)}
 				</Modal>
 			)}
 		</>

@@ -73,7 +73,7 @@ export const StyledMenu = styled.div`
   }
 `
 
-export const HamburgerButton = styled.button`
+export const HamburgerButton = styled.div`
   display: none;
   background: none;
   border: none;

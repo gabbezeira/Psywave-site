@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import '@gs'
 
-export const StyledForm = styled.button`
+export const StyledForm = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
