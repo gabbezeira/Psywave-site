@@ -33,7 +33,6 @@ export const StyledAbout = styled.div`
 
     .description {
       width: 100%;
-
       font-size: 1.25rem;
       font-weight: normal;
       color: var(--white-color)
@@ -101,6 +100,12 @@ export const StyledAbout = styled.div`
     padding: 2rem 3rem;
     gap: 2rem;
 
+    .texts {
+      .description {
+        font-size: 1rem;
+      }
+    }
+
     .contact-area {
       flex-direction: column;
 
@@ -110,7 +115,7 @@ export const StyledAbout = styled.div`
         padding: 0.875rem;
 
         .text {
-          font-size: 0.875rem;
+          font-size: 12px;
         }
       }
     }
