@@ -37,6 +37,7 @@ export function CategoryAccounts() {
 							<Card
 								key={item.numericId}
 								numericId={item.numericId}
+								categorySlug={category.slug}
 								title={item.title}
 								price={item.price}
 								image={item.image}

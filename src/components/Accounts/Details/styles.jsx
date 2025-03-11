@@ -5,6 +5,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
   align-items: center;
   gap: 2.25rem;
   text-align: center;
@@ -25,8 +26,8 @@ export const Container = styled.div`
     text-align: start;
 
     .imageArea {
-      height: 22.9375rem;
-      width: auto;
+      height: auto;
+      width: 100%;
       flex-shrink: 0;
       min-width: 20rem;
       max-width: 30rem;
