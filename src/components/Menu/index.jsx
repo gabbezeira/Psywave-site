@@ -20,7 +20,9 @@ export const Menu = () => {
 
 	return (
 		<StyledMenu>
-			<img src={Logo} className="logo" alt="logo" />
+			<Link to="/">
+				<img src={Logo} className="logo" alt="logo" />
+			</Link>
 			<HamburgerButton onClick={toggleMenu}>
 				{isOpen ? <CloseIcon size={32} /> : <MenuIcon size={32} />}
 			</HamburgerButton>
