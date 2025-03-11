@@ -8,7 +8,7 @@ export function HeroSection() {
 		<StyledHeroSection>
 			<div className="heroTopArea">
 				<div className="heroTexts">
-					<div className="title">As melhores contas do mercado</div>
+					<div className="title">As melhores contas, para os melhores jogadores.</div>
 					<div className="subtitle">
 						Contas de GTA, Forza Horizon, EA FC e muito mais!
 					</div>
