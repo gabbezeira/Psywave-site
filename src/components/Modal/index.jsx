@@ -37,13 +37,9 @@ export const Modal = ({ onClose, children }) => {
 				onAnimationEnd={handleAnimationEnd}
 			>
 				{children}
-				<button
-					type="button"
-					className="closeButton"
-					onClick={handleCloseButtonClick}
-				>
+				<span className="closeButton" onClick={handleCloseButtonClick}>
 					Fechar
-				</button>
+				</span>
 			</div>
 		</ModalStyled>
 	)
