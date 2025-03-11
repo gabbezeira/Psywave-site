@@ -20,7 +20,7 @@ export const StyledCategorySection = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding: 2rem 3rem;
+    padding: 2rem;
   }
 `
 
