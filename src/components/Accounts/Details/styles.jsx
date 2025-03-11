@@ -26,7 +26,7 @@ export const Container = styled.div`
     text-align: start;
 
     .imageArea {
-      height: auto;
+      height: 22.9375rem;
       width: 100%;
       flex-shrink: 0;
       min-width: 20rem;
