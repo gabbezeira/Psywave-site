@@ -49,7 +49,7 @@ export function Details() {
 	const whatsappMessage = product
 		? `Quero comprar a conta "${encodeURIComponent(product.title)}" por R$${encodeURIComponent(product.price)},00`
 		: ''
-	const whatsappUrl = `https://wa.me/5567993441076?text=${whatsappMessage}`
+	const whatsappUrl = `https://wa.me/5517992546927?text=${whatsappMessage}`
 
 	if (loading) {
 		return <Loader />
