@@ -12,25 +12,12 @@ export const Container = styled.div`
   background-color: ${({ $cardBackground }) => $cardBackground || 'rgba(255, 255, 255, 0.10)'};
   backdrop-filter: blur(0.8rem);
 
-  width: 15.5625rem;
+  width: auto;
   min-height: 18.5rem;
 
   padding: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.30);
   border-radius: 1.25rem;
-
-  .image {
-    width: 100%;
-    height: 8.25rem;
-    max-height: 8.25rem;
-    user-select: none;
-    pointer-events: none;
-
-    background-image: ${({ $cardImage }) => `url(${$cardImage})`};
-    background-size: cover;
-    background-position: start;
-
-  }
 
   .footer {
     display: flex;
