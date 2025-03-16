@@ -66,7 +66,7 @@ export const Cards = styled.div`
 
 export const CardsContainer = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
 
