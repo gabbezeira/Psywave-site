@@ -71,7 +71,7 @@ export const CardsContainer = styled.div`
   gap: 2rem;
 
   flex-wrap: nowrap;
-  overflow: hidden; 
+  overflow: hidden;
   scroll-behavior: smooth;
 
   width: 100%;
