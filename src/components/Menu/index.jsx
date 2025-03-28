@@ -59,7 +59,7 @@ export const Menu = () => {
 
 			<Link
 				className="button"
-				to="/#contato"
+				to="/login"
 				smooth
 				scroll={(el) => scrollWithOffset(el, -20)}
 			>
@@ -97,6 +97,15 @@ export const Menu = () => {
 						onClick={toggleMenu}
 					>
 						Contato
+					</Link>
+					<Link
+						className="link"
+						to="/login"
+						smooth
+						scroll={(el) => scrollWithOffset(el, -20)}
+						onClick={toggleMenu}
+					>
+						Entrar
 					</Link>
 				</MobileMenu>
 			)}

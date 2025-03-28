@@ -34,9 +34,9 @@ export const SnackbarContainer = styled.div`
   height: auto;
 
   min-width: 15.625rem;
-  background-color: #131313;
+  background-color: var(--white-color);
 
-  color: var(--white-color);
+  color: #484849;
   white-space: nowrap;
   text-align: center;
   font-size: 1rem;

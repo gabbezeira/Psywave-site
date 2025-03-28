@@ -5,10 +5,13 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { CategoryAccountsPage } from '@pages/CategoryAccountsPage.jsx'
 import { Error } from '@pages/Error.jsx'
 import { Home } from '@pages/Home.jsx'
+import { LoginPage } from '@pages/LoginPage.jsx'
 import { App } from './App'
 
 import { AuthProvider } from '@context/AuthContext.jsx'
+import { NotificationProvider } from '@context/NotificationContext.jsx'
 import { DetailsPage } from './pages/DetailsPage'
+import { PainelPage } from './pages/Painel'
 
 const router = createBrowserRouter([
 	{
@@ -28,6 +31,14 @@ const router = createBrowserRouter([
 				path: 'accounts/:categorySlug/:numericId',
 				element: <DetailsPage />,
 			},
+			{
+				path: 'login',
+				element: <LoginPage />,
+			},
+			{
+				path: 'painel',
+				element: <PainelPage />,
+			},
 		],
 	},
 	{
@@ -38,6 +49,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
-		<RouterProvider router={router} />
+		<NotificationProvider>
+			<AuthProvider>
+				<RouterProvider router={router} />
+			</AuthProvider>
+		</NotificationProvider>
 	</React.StrictMode>,
 )

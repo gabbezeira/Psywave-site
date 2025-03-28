@@ -131,5 +131,21 @@
 				"platform": ["PS4", "PS5", "XONE", "SERIES S|X"]
 			}
 		]
+	},
+	{
+		"title": "Battlefield 2042",
+		"slug": "BF",
+		"background": "https://raw.githubusercontent.com/gabbezeira/Psywave-site/refs/heads/main/images/eafc-bg.webp",
+		"items": [
+			{
+				"numericId": 1,
+				"title": "CONTAS FULL MASTER",
+				"description": "NIVEL 235 OU 2,999\nDINHEIRO 9999999\nROLETA DE SORTEIOS 99999999\nVARIOS CARROS",
+				"game": "Forza Horizon 5",
+				"price": "100,00",
+				"image": "https://t.ctcdn.com.br/vd9_-qiHSOoHgLrNwJOr4bSKZzk=/900x675/smart/i498917.jpeg",
+				"platform": ["XONE", "SERIES S|X"]
+			}
+		]
 	}
 ]
